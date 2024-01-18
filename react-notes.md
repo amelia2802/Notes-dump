@@ -2,3 +2,6 @@
 - The map() method in JavaScript is used to transform lists of data.
 - When using the map() method, you will need to define a new variable, as it always returns a new array.
 - When a JSX transformation will be part of the render method of components, you need to use curly braces to wrap your dynamic data so it can be accessed.
+-  Amongst other things, keys instruct React on how to treat a specific element when updates happen.
+-  Amongst other things, keys instruct React on whether a specific element’s internal state should be preserved when updates happen.
+-  Keys are identifiers that help React determine which items have changed, are added or are removed.
