@@ -25,11 +25,11 @@
 - maintenance concerns
 - incompatibility
 
-# <dl>
+# `<dl>`
 description list - also used for displaying meta data as key value pairs
-# <dt>
+# `<dt>`
 description term
-# <dd>
+# `<dd>`
 description details
 
 # Web standards
