@@ -44,7 +44,23 @@ A checkbox uses the `checked` property to determine what should
 be saved in state. Other form elements use the `value` property instead.
 
 
-# 9. How do you watch for a form submit? How can you trigger
-   a form submit?
+# 9. How do you watch for a form submit? How can you trigger a form submit?
 - Can watch for the submit with an onSubmit handler on the `form` element.
 - Can trigger the form submit with a button click.
+
+# what are react's primary tasks?
+
+- work with DOM/browser to render UI to the page
+
+- Manage state for us between render cycles
+
+- Keep the UI updated whenever state changes occur
+
+# What React can't handel on it's own?
+
+- Outside effects
+	- localStorage
+	- API/database interactions
+	- Subscriptions(ex: web sockets)
+	- Syncing 2 different internal states together
+
