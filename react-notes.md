@@ -18,28 +18,23 @@ For conditional rendering when the value only depends on the first condition
 
 When there are multiple conditions to justify the rendering of the elements
 
-# 4. What if you need to decide between > 2 options on
-   what to display?
+# 4. What if you need to decide between > 2 options on what to display?
 
 ternary
 
-# 5. In a vanilla JS app, at what point in the form submission
-   process do you gather all the data from the filled-out form?
+# 5. In a vanilla JS app, at what point in the form submission process do you gather all the data from the filled-out form?
 Right before the form is submitted.
 
 
-# 6. In a React app, when do you gather all the data from
-   the filled-out form?
+# 6. In a React app, when do you gather all the data from the filled-out form?
 As the form is being filled out. The data is all held in local state.
 
 
-# 7. Which attribute in the form elements (value, name, onChange, etc.)
-   should match the property name being held in state for that input?
+# 7. Which attribute in the form elements (value, name, onChange, etc.) should match the property name being held in state for that input?
 `name` property.
 
 
-# 8. What's different about saving the data from a checkbox element
-   vs. other form elements?
+# 8. What's different about saving the data from a checkbox element vs. other form elements?
 A checkbox uses the `checked` property to determine what should
 be saved in state. Other form elements use the `value` property instead.
 
@@ -75,8 +70,7 @@ be saved in state. Other form elements use the `value` property instead.
   render DOM elements
 
 
-# 14. When does React run your useEffect function? When does it NOT run
-   the effect function?
+# 14. When does React run your useEffect function? When does it NOT run the effect function?
 - As soon as the component loads (first render)
 - On every re-render of the component (assuming no dependencies array)
 - Will NOT run the effect when the values of the dependencies in the
