@@ -74,3 +74,68 @@
 - Useful for stakeholder communication through graphs and plots.
 
 ---
+### Model Training Process
+
+#### Step 1: Split the Dataset
+- **Purpose**: To evaluate the model against the bias-variance trade-off before production.
+- **Datasets**:
+  - **Training Dataset**: Majority of data (~80%) used to train the model.
+  - **Test Dataset**: Held-out data used to test the model’s generalization to new data.
+
+#### Model Training Workflow
+1. **Feed the Training Data into the Model**.
+2. **Compute the Loss Function**: Measure the model's deviation from the goal.
+3. **Update Model Parameters**: Adjust parameters to reduce the loss.
+
+- **Stop Condition**: The process continues until a predefined condition is met (e.g., training time, number of cycles).
+
+### Key Concepts in Model Training
+
+- **Model Parameters**: Configurations updated by the training algorithm to change model behavior (e.g., weights in neural networks).
+- **Loss Function**: A metric that quantifies the distance between the model’s predictions and the actual outcomes.
+
+### Practical Advice for Model Training
+
+- Use machine learning frameworks with pre-built models and algorithms.
+- **Model Selection**: Test different models to find the best solution for your problem.
+- **Hyperparameters**: Settings that affect model training but are not updated during training (e.g., number of clusters).
+- **Iteration**: Be prepared to iterate, as machine learning is rarely an exact science.
+
+### Types of Models
+
+#### Linear Models
+- **Description**: Simple models describing the relationship between inputs and outputs through a linear function (e.g., y = mx + b).
+- **Use Case**: Often used as a baseline for comparison with more complex models.
+
+#### Tree-Based Models
+- **Description**: Models that categorize or regress by creating a structure of nested if/else blocks.
+- **Example**: XGBoost is a commonly used tree-based model with enhancements.
+
+#### Deep Learning Models
+- **Description**: Based on the structure of the human brain, using neurons connected by weights.
+- **Noteworthy Types**:
+  - **FFNN (Feed Forward Neural Network)**: Layers of neurons connected by weights.
+  - **CNN (Convolutional Neural Networks)**: Commonly used for image processing.
+  - **RNN/LSTM (Recurrent Neural Networks/Long Short-Term Memory)**: Effective for processing sequences of data.
+  - **Transformer**: Modern architecture for handling large datasets involving sequences of data.
+
+### Machine Learning Libraries
+
+- **Classical Models**: Use scikit-learn for linear, tree-based models, and common ML tools.
+- **Deep Learning**: Libraries like mxnet, TensorFlow, and PyTorch are commonly used.
+
+### Model Evaluation
+
+#### Model Accuracy
+- **Definition**: The fraction of predictions a model gets right.
+- **Example**: Evaluating how often a flower species is correctly identified by the model.
+
+#### Using Log Loss
+- **Description**: Measures the model’s uncertainty about a prediction.
+- **Example**: Evaluating how certain the model is that a customer will buy a t-shirt or a jacket.
+
+### Iterative Nature of Machine Learning
+- **Continuous Monitoring**: After deployment, continuously monitor the model’s performance.
+- **Reevaluation**: Be ready to revisit the data, modify parameters, or change the model type as needed.
+
+---
