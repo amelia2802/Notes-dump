@@ -1,12 +1,29 @@
+# Web Standards:
+- Web standards define the technologies we use to build the web.
+- These standards ensure that web content is accessible, reliable, and compatible across different browsers, devices, and platforms.
+
+Tim Berners Lee founded W3C
+
+# Git vs GitHub
+
+- ### Git :
+  - version control System
+  - Runs locally on machine
+  - helps keep a history of changes you've made to project
+
+- ### GitHub:
+  - online platform that stores Git repos
+  - runs online in the cloud
+  - helps share code with others 
 # library:
-- collection of reusable codes
-- reduces need to write repetitive/complex things from scratch
-- control how/when it's used. No /few boundaries .
+- a collection of reusable codes
+- reduces the need to write repetitive/complex things from scratch
+- control how/when it's used. No /few boundaries.
 
 # framework
-- predetermined architecture - follow a specified pattern of development.
+- predetermined architecture - follows a specified pattern of development.
 
-- work within the boundaries set by framework.
+- work within the boundaries set by the framework.
 
 
 # why react?
