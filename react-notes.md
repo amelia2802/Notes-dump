@@ -89,8 +89,59 @@ be saved in state. Other form elements use the `value` property instead.
 
 # 17. What are some examples of HTML elements that work together to add functionality or styling to each other?
 
+
+# 18. react.children
+
+Children lets you manipulate and transform the JSX you received as the children prop.
+
+```const mappedChildren = Children.map(children, child =>
+  <div className="Row">
+    {child}
+  </div>
+);
+```
+
+## Usage
+- Transforming children
+- Running some code for each child
+- Counting children
+- Converting children to an array
+
+Children.map is similar to to transforming arrays with map(). The difference is that the children data structure is considered opaque. This means that even if it’s sometimes an array, you should not assume it’s an array or any other particular data type. This is why you should use Children.map if you need to transform it.
+
+## Disadvantages
+- fragile/delicate
+- limited indepth
+
+
+# 19. react.cloneElement()
+
+cloneElement lets you create a new React element using another element as a starting point.
+
+```const clonedElement = cloneElement(element, props, ...children)```
+
+## Usage
+Overriding props of an element
+
+# 20. context
+
+Usually, you will pass information from a parent component to a child component via props. But passing props can become verbose and inconvenient if you have to pass them through many components in the middle, or if many components in your app need the same information. Context lets the parent component make some information available to any component in the tree below it—no matter how deep—without passing it explicitly through props.
+
+```import { createContext } from 'react';
+
+export const LevelContext = createContext(1);
+```
+
+useContext is a Hook. Just like useState and useReducer, you can only call a Hook immediately inside a React component (not inside loops or conditions). useContext tells React that the Heading component wants to read the LevelContext.
+
+
+## Use cases for context 
+- *Theming:* If your app lets the user change its appearance (e.g. dark mode), you can put a context provider at the top of your app, and use that context in components that need to adjust their visual look.
+- *Current account:* Many components might need to know the currently logged in user. Putting it in context makes it convenient to read it anywhere in the tree. Some apps also let you operate multiple accounts at the same time (e.g. to leave a comment as a different user). In those cases, it can be convenient to wrap a part of the UI into a nested provider with a different current account value.
+- *Routing:* Most routing solutions use context internally to hold the current route. This is how every link “knows” whether it’s active or not. If you build your own router, you might want to do it too.
+- *Managing state:* As your app grows, you might end up with a lot of state closer to the top of your app. Many distant components below may want to change it. It is common to use a reducer together with context to manage complex state and pass it down to distant components without too much hassle.
 - <ul> & <li>, <select> & <option>, <table> & all the other table elements
 
-# 18. How can compound components help you avoid having to drill props multiple levels down?
+# 20. How can compound components help you avoid having to drill props multiple levels down?
    
 - Compound component "flatten" the heirarchy that I would otherwise need to pass props through. Since I need to provide the children to render, the parent-most component has direct access to those "grandchild" components, to which it can pass whatever props it needs to pass directly.
