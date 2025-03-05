@@ -142,12 +142,12 @@ useContext is a Hook. Just like useState and useReducer, you can only call a Hoo
 - *Managing state:* As your app grows, you might end up with a lot of state closer to the top of your app. Many distant components below may want to change it. It is common to use a reducer together with context to manage complex state and pass it down to distant components without too much hassle.
 - ```<ul> & <li>, <select> & <option>, <table> & all the other table elements```
 
-# 20. How can compound components help you avoid having to drill props multiple levels down?
+# 21. How can compound components help you avoid having to drill props multiple levels down?
    
 - Compound component "flatten" the heirarchy that I would otherwise need to pass props through. Since I need to provide the children to render, the parent-most component has direct access to those "grandchild" components, to which it can pass whatever props it needs to pass directly.
 
 
-# 21. compound components with dot syntax:
+# 22. compound components with dot syntax:
 
 This is convenient if you have a single module that exports many React components. For example, if MyComponents.DatePicker is a component, you can use it directly from JSX with:
 
@@ -165,6 +165,6 @@ function BlueDatePicker() {
 }
 ```
 
-# 22. headless components
+# 23. headless components
 
 A Headless Component extracts all non-visual logic and state management, separating the brain of a component from its looks.
