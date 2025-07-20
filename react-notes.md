@@ -168,3 +168,7 @@ function BlueDatePicker() {
 # 23. headless components
 
 A Headless Component extracts all non-visual logic and state management, separating the brain of a component from its looks.
+
+# 24. What is a route/url parameter?
+
+A portion of our route path is a placeholder for what will eventually be the actual segment in the URL of the page.
